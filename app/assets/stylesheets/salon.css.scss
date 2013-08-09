@@ -4,3 +4,51 @@
 
 //Top bar override
 
+// $backgrounds: services, district, contact, membership;
+$mainpurple: #7755aa;
+$mainyellow: rgb(255, 255, 0);
+@mixin background {
+  position: relative;
+  width: 100%;
+  min-width: 910px;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+#servicesbackground {
+  background: url(clear-bg-10-fs8.png);
+  // lighten($mainpurple, 30%);
+  @include background
+}
+#districtbackground {
+  background: $mainyellow;
+  @include background
+}
+#contactbackground {
+  background: $mainpurple;
+  @include background
+}
+#membersbackground {
+  background: lighten($mainyellow, 20%);
+  @include background
+}
+
+#div1 {
+  background: url(divider-2-fs8.png) repeat-x;
+  width: 100%;
+  min-width: 910px;
+  height: 32px;
+  position: relative;
+}
+#break45px {
+  width: 100%;
+  min-width: 910px;
+  height: 45px;
+  position: relative;
+}
+
+#small-logo {
+  display: none;
+}
+
+
