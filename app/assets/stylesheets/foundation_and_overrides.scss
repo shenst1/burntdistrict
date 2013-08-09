@@ -1,7 +1,16 @@
 //
 // Foundation Variables
 //
+section.top-bar-section {
+    float: left;
+    left: 50% !important;
+    position: relative;
+}
 
+section.top-bar-section ul.left {
+    position: relative;
+    right: 50%;
+}
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
 $base-font-size: 100% !default;
@@ -51,7 +60,7 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
+$body-bg: #8a8a8a;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
