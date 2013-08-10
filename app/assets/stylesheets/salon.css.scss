@@ -6,7 +6,7 @@
 
 // $backgrounds: services, district, contact, membership;
 $mainpurple: #7755aa;
-$mainyellow: rgb(255, 255, 0);
+// $mainyellow: rgb(255, 255, 0);
 @mixin background {
   position: relative;
   width: 100%;
@@ -21,15 +21,19 @@ $mainyellow: rgb(255, 255, 0);
   @include background
 }
 #districtbackground {
-  background: $mainyellow;
-  @include background
-}
-#contactbackground {
   background: $mainpurple;
   @include background
 }
-#membersbackground {
-  background: lighten($mainyellow, 20%);
+#contactbackground {
+  background: #8a8a8a;
+  @include background
+}
+#membershipbackground {
+  background: lighten($mainpurple, 20%);
+  @include background
+}
+#footerbackground {
+  background: url(clear-bg-10-fs8.png);
   @include background
 }
 
