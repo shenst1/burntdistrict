@@ -6,8 +6,8 @@ $(document).ready ->
     section = "#" + @.id + "_section"
     $(document.body).animate
       scrollTop: $(section).offset().top
-    , 2000
-    $("#small-logo").fadeIn(2000)
+    , 500
+    $("#small-logo").fadeIn(500)
 
 
   $('.top-bar-section a').click navSection
