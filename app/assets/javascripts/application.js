@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.pageslide
+//= require jbar
+//= require jbar.min
 //= require foundation
 //= require turbolinks
 //= require_tree .

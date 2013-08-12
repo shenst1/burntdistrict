@@ -11,3 +11,4 @@ $(document).ready ->
 
 
   $('.top-bar-section a').click navSection
+
