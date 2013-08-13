@@ -6,4 +6,5 @@ $(document).ready ->
   revealServices = (e) ->
     e.preventDefault();
     $(".main-logo img").fadeOut()
+    $("#welcome").fadeIn()
   $('div.main-logo').click revealServices
