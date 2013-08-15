@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $mainpurple: #7755aa;
 // $backgrounds: services, district, contact, membership;
-// $mainyellow: rgb(255, 255, 0);
+$mainyellow: rgb(255, 255, 0);
+
 @mixin background {
   position: relative;
   width: 100%;
@@ -11,25 +12,61 @@ $mainpurple: #7755aa;
   overflow-x: hidden;
   overflow-y: visible;
 }
+@mixin clearbg {
+  background: url(clear-bg-10-fs8.png) top left repeat ;
+  @include background
+}
+@mixin h2header {
+    font-size: 4em;
+    color: #2a2a2a;
+    text-align: center;
+    font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    text-shadow: 1px 1px 0 $mainpurple,-1px -1px 0 $mainpurple, 4px 4px 0 rgba(52,54,56,.4);
+}
 // Custom styling for services section
 #services_section {
   #servicesbackground {
-  background: url(clear-bg-10-fs8.png) top left repeat ;
-  // lighten($mainpurple, 30%);
-  @include background
+  @include clearbg
   }
   h3 {
     color: #2a2a2a;
+    text-align: center;
+  }
+  dl {
+    text-align: center;
+  }
+  dd {
+    font-size: 2em;
+    text-align: center;
+  }
+  dt {
+    font-size: 2em;
+    text-align: center;
   }
 }
 
 //Custom styling for the district section
 #district_section {
   h2 {
-    font-size: 4em;
+    @include h2header
+  }
+
+  p {
+    font-size: 1.5em;
+    &.secondary {
+      font-size: 2em;
+      border: 1px dotted rgba(52,54,56,.4);
+      border-width: 1px 0;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+    }
+    &.clearbg {
+      text-align: center;
+      @include clearbg
+    }
   }
   #districtbackground {
-  background: url(New-Waxing.png) right no-repeat, $mainpurple;
+  background: url(New-Waxing.png) center no-repeat, $mainpurple;
   @include background
   }
   #div1 {
@@ -39,32 +76,71 @@ $mainpurple: #7755aa;
   }
 }
 
-//Custom styling for the contact section
 
-#contact_section {
-  #contactbackground {
-  background: #8a8a8a;
-  @include background
-  }
-}
 
 //Custom styling for the membership section
 #membership_section {
+  h2 {
+    @include h2header
+  }
   #membershipbackground {
   background: lighten($mainpurple, 20%);
   @include background
   }
-}
-
-//Custom styling for the footer
-
-#footer_section {
-  #footerbackground {
-  background: url(clear-bg-10-fs8.png);
+  p {
+    font-size: 1.75em;
+    &.secondary {
+      font-size: 2em;
+      border: 1px dotted rgba(52,54,56,.4);
+      border-width: 1px 0;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &.clearbg {
+      text-align: center;
+      @include clearbg
+    }
+  }
+  #div2 {
+  background: url(divider-2-fs8.png) repeat-x;
+  height: 32px;
   @include background
   }
 }
 
+
+//Custom styling for the contact section
+
+#contact_section {
+  h2 {
+    @include h2header
+  }
+  #contactbackground {
+  background: #8a8a8a;
+  @include background
+  }
+  #div3 {
+  background: url(divider-2-fs8.png) repeat-x;
+  height: 32px;
+  @include background
+  }
+  p {
+    font-size: 1.75em;
+    &.secondary {
+      font-size: 2em;
+      border: 1px dotted rgba(52,54,56,.4);
+      border-width: 1px 0;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &.clearbg {
+      text-align: center;
+      @include clearbg
+    }
+  }
+}
 //Styling for transition elements
 
 #break45px {
@@ -76,6 +152,23 @@ $mainpurple: #7755aa;
 
 #small-logo {
   display: none;
+}
+//Custom styling for the footer
+
+#footer_section {
+  #footerbackground {
+  background: url(clear-bg-10-fs8.png);
+  @include background
+  }
+  #div4 {
+  background: url(divider-2-fs8.png) repeat-x;
+  height: 32px;
+  @include background
+  }
+  p {
+    font-size: .75em;
+    text-align: center;
+  }
 }
 
 
