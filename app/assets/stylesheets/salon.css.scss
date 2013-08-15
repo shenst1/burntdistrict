@@ -1,11 +1,8 @@
 // Place all the styles related to the salon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-//Top bar override
-
-// $backgrounds: services, district, contact, membership;
 $mainpurple: #7755aa;
+// $backgrounds: services, district, contact, membership;
 // $mainyellow: rgb(255, 255, 0);
 @mixin background {
   position: relative;
@@ -14,36 +11,62 @@ $mainpurple: #7755aa;
   overflow-x: hidden;
   overflow-y: visible;
 }
-
-#servicesbackground {
-  background: url(clear-bg-10-fs8.png);
+// Custom styling for services section
+#services_section {
+  #servicesbackground {
+  background: url(clear-bg-10-fs8.png) top left repeat ;
   // lighten($mainpurple, 30%);
   @include background
-}
-#districtbackground {
-  background: $mainpurple;
-  @include background
-}
-#contactbackground {
-  background: #8a8a8a;
-  @include background
-}
-#membershipbackground {
-  background: lighten($mainpurple, 20%);
-  @include background
-}
-#footerbackground {
-  background: url(clear-bg-10-fs8.png);
-  @include background
+  }
+  h3 {
+    color: #2a2a2a;
+  }
 }
 
-#div1 {
+//Custom styling for the district section
+#district_section {
+  h2 {
+    font-size: 4em;
+  }
+  #districtbackground {
+  background: url(New-Waxing.png) right no-repeat, $mainpurple;
+  @include background
+  }
+  #div1 {
   background: url(divider-2-fs8.png) repeat-x;
-  width: 100%;
-  min-width: 910px;
   height: 32px;
-  position: relative;
+  @include background
+  }
 }
+
+//Custom styling for the contact section
+
+#contact_section {
+  #contactbackground {
+  background: #8a8a8a;
+  @include background
+  }
+}
+
+//Custom styling for the membership section
+#membership_section {
+  #membershipbackground {
+  background: lighten($mainpurple, 20%);
+  @include background
+  }
+}
+
+//Custom styling for the footer
+
+#footer_section {
+  #footerbackground {
+  background: url(clear-bg-10-fs8.png);
+  @include background
+  }
+}
+
+//Styling for transition elements
+
 #break45px {
   width: 100%;
   min-width: 910px;
