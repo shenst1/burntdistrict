@@ -14,7 +14,8 @@ $(document).ready ->
 
   revealInfo = (e) ->
     e.preventDefault();
-    $(".services").removeClass("info")
-    alert "It is responding the right thing at least."
+    info = "#" + @.id + "_info"
+    $("div .info").hide()
+    $(info).show()
     # $("#hair_info").fadeIn()
-  $('.sub-nav h3').click revealInfo
+  $('.menu dd').click revealInfo

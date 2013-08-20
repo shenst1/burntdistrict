@@ -1,7 +1,7 @@
 // Place all the styles related to the salon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$mainpurple: #7755aa;
+$mainpurple: #666;
 // $backgrounds: services, district, contact, membership;
 $mainyellow: rgb(255, 255, 0);
 
@@ -66,7 +66,7 @@ $mainyellow: rgb(255, 255, 0);
     }
   }
   #districtbackground {
-  background: url(New-Waxing.png) center no-repeat, $mainpurple;
+  background: url(spaphoto.png) center no-repeat, $mainpurple;
   @include background
   }
   #div1 {
@@ -84,7 +84,7 @@ $mainyellow: rgb(255, 255, 0);
     @include h2header
   }
   #membershipbackground {
-  background: lighten($mainpurple, 20%);
+  background: url(hairphoto.png) center no-repeat, lighten($mainpurple, 20%);
   @include background
   }
   p {
@@ -117,7 +117,7 @@ $mainyellow: rgb(255, 255, 0);
     @include h2header
   }
   #contactbackground {
-  background: #8a8a8a;
+  background: url(eventsphoto.png) center no-repeat, #8a8a8a;
   @include background
   }
   #div3 {
