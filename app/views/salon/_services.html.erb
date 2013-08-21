@@ -1,6 +1,5 @@
 <div style="display:none" id="welcome" class="menu">
-  <dl class="sub-nav" >
-    <dt>Services:</dt>
+  <dl class="sub-nav">
     <dd id="hair"><a href="#">Hair</a></dd>
     <dd id="spa"><a href="#">Spa</a></dd>
     <dd id="events"><a href="#">Events</a></dd>
@@ -13,14 +12,16 @@
   </div>
 </div>
 <div style="display:none" id="hair_info" class="info">
+  <%= render 'hairservices' %>
  </div>
 <div style="display:none" id="spa_info" class="info">
+   <%= render 'spa_services' %>
 </div>
 <div style="display:none" id="events_info" class="info">
    <%= render 'event_services' %>
 </div>
 <div style="display:none" id="bridal_info" class="info">
-
+   <%= render 'bridal_services' %>
 </div>
 
 
