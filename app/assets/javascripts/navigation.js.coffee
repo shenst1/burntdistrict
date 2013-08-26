@@ -4,6 +4,9 @@ $(document).ready ->
   navSection = (e) ->
     e.preventDefault();
     section = "#" + @.id + "_section"
+    $(".main-logo").remove()
+    $(".success").hide()
+    $("#welcome").fadeIn()
     $(document.body).animate
       scrollTop: $(section).offset().top
     , 500

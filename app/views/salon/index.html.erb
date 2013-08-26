@@ -17,7 +17,11 @@
   <div id="div1">
   </div>
   <div id="districtbackground">
-    <%= render "district" %>
+    <div class="row">
+      <div id="districtsection">
+      <%= render "district" %>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -27,7 +31,9 @@
   <div id="div2">
   </div>
   <div id="membershipbackground">
-    <%= render "membership" %>
+    <div id="membershipsection">
+      <%= render "membership" %>
+    </div>
   </div>
 </section>
 
@@ -37,14 +43,14 @@
   <div id="div3">
   </div>
   <div id="contactbackground">
-    <%= render "contact" %>
+    <div id="contactsection">
+      <%= render "contact" %>
+    </div>
   </div>
 </section>
 
 <footer class="small-12 columns footer" id="footer_section">
   <div id="break45px">
-  </div>
-  <div id="div4">
   </div>
   <div id="footerbackground">
     <%= render "footer" %>
