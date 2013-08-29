@@ -37,14 +37,18 @@ $mainyellow: rgb(255, 255, 0);
   }
   dl {
     text-align: center;
+    color: $mainyellow;
+
   }
   dd {
     font-size: 2em;
     text-align: center;
+    text-decoration: underline;
   }
   dt {
     font-size: 2em;
     text-align: center;
+
   }
   ul {
     list-style-type: none;
@@ -59,6 +63,7 @@ $mainyellow: rgb(255, 255, 0);
 
   p {
     font-size: 1.5em;
+
     &.secondary {
       font-size: 2em;
       border: 1px dotted rgba(52,54,56,.4);
