@@ -1,2 +1,3 @@
 module SalonHelper
+
 end
