@@ -3,8 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.0'
 
 
-# gem 'pg', group: :production
-gem 'mysql2', group: :production
+gem 'pg', group: :production
+# gem 'mysql2', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
