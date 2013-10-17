@@ -22,3 +22,4 @@ $(document).ready ->
     $(info).show()
     # $("#hair_info").fadeIn()
   $('.menu dd').click revealInfo
+
