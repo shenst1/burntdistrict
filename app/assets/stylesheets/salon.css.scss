@@ -141,7 +141,8 @@ $mainyellow: rgb(255, 255, 0);
     @include h2header
   }
   #contactbackground {
-  background: url(eventsphoto.png) top no-repeat;
+  // background: url(eventsphoto.png) top no-repeat;
+  background-color: #bdc3c7;
   background-size: 100%;
   @include background
   }
@@ -155,6 +156,7 @@ $mainyellow: rgb(255, 255, 0);
   }
   p {
     font-size: 1.75em;
+
     &.secondary {
       font-size: 2em;
       border: 1px dotted rgba(52,54,56,.4);
@@ -167,6 +169,26 @@ $mainyellow: rgb(255, 255, 0);
       text-align: center;
       @include clearbg
     }
+    &.name {
+      display: inline;
+    }
+    &.title {
+      display: inline;
+      // background-color: #f1c40f;
+      color: #2c3e50;
+    }
+    &.bio {
+      font-size: 1em;
+      display: inline;
+      float: right;
+    }
+  }
+  ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+  li.profile {
+
   }
 }
 //Styling for transition elements

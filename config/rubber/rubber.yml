@@ -1,5 +1,5 @@
 # REQUIRED: The name of your application
-app_name: burnt_district
+app_name: burntdistrict
 
 # REQUIRED: The system user to run your app servers as
 app_user: app
@@ -51,14 +51,13 @@ cloud_providers:
     # ap-southeast-1
     # ap-southeast-2
     #
-    region: us-west-2
+    region: us-west-1
 
     # REQUIRED The amazon keys and account ID (digits only, no dashes) used to access the AWS API
     #
-    access_key: AKIAJRQ5IJJYLMWHPOEA
-    secret_access_key: 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
-    account: '8933-0316-8029'
-
+    access_key: AKIAILDHRCXEMIWBITGQ
+    secret_access_key: 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
+    account: 350055937144
     # REQUIRED:  The name of the amazon keypair and location of its private key
     #
     # NOTE: for some reason Capistrano requires you to have both the public and
@@ -66,7 +65,7 @@ cloud_providers:
     # extension ".pub".  The easiest way to get your hand on this is to create the
     # public key from the private key: ssh-keygen -y -f gsg-keypair > gsg-keypair.pub
     #
-    key_name: BurntDistrict
+    key_name: gsg-keypair
     key_file: "#{Dir[(File.expand_path('~') rescue '/root') + '/.ec2/*' + cloud_providers.aws.key_name].first}"
 
     # OPTIONAL: Needed for bundling a running instance using rubber:bundle
@@ -84,7 +83,7 @@ cloud_providers:
     #
     # m1.small or m1.large or m1.xlarge
     image_type: m1.small
-    image_id: ami-8ade42ba
+    image_id: ami-7e37033b
 
     # OPTIONAL: EC2 spot instance request support.
     #
