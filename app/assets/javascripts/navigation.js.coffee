@@ -8,7 +8,7 @@ $(document).ready ->
     $(".success").hide()
     $("#welcome").fadeIn()
     $("html, body").animate
-      scrollTop: $(section).offset().top
+      scrollTop: $(section).offset().top - 45
     , 500
     $("#small-logo").fadeIn(500)
     return false

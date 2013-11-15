@@ -13,7 +13,7 @@ $mainyellow: rgb(255, 255, 0);
   overflow-y: visible;
 }
 @mixin clearbg {
-  background: url(clear-bg-10-fs8.png) top left repeat ;
+  background: transparent;
   @include background
 }
 h2 {
@@ -23,10 +23,18 @@ h2 {
     font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     text-shadow: 1px 1px 0 $mainpurple,-1px -1px 0 $mainpurple, 4px 4px 0 rgba(52,54,56,.4);
 }
+.menu-services {
+  display: none;
+}
+
 // Custom styling for services section
 #services_section {
   #servicesbackground {
-  @include clearbg
+  @include clearbg;
+
+  }
+  .sub-nav {
+    text-decoration: underline;
   }
   img {
     width: 100%;

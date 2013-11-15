@@ -1,27 +1,28 @@
-<div style="display:none" id="welcome" class="menu">
-  <u><dl class="sub-nav">
+<div id="welcome" class="menu-services">
+  <dl class="sub-nav">
     <dd id="hair"><a href="#">Hair</a></dd>
     <dd id="spa"><a href="#">Spa</a></dd>
     <dd id="events"><a href="#">Events</a></dd>
     <dd id="bridal"><a href="#">Bridal</a></dd>
-  </dl></u>
+  </dl>
   <div id="welcome_message" class="info">
     <h3>Seattle's First Member's Only Salon &amp; Spa</h3>
 
-    <h3 class="subheader">Burnt District is not just a Salon and Spa... We are also a photography studio, an art gallery and an events venue.  But above all, we are a gathering space for our members.  This members only, private establishment has merged a high-end salon with a "speakeasy feel".  Come on down and sign up, membership is complimentary!</h3>
+    <h3 class="subheader">Burnt District is not just a Salon and Spa... We are a photography studio, art gallery and events venue.  Above all, we are a gathering space for our members.  This members only, private establishment has merged a high-end salon with a "speakeasy feel".  Come on down and sign up, membership is complimentary!</h3>
   </div>
 </div>
+
 <div style="display:none" id="hair_info" class="info">
-  <%= render 'hairservices' %>
+  <%= render 'salon/services/hairservices' %>
  </div>
 <div style="display:none" id="spa_info" class="info">
-   <%= render 'spa_services' %>
+   <%= render 'salon/services/spa_services' %>
 </div>
 <div style="display:none" id="events_info" class="info">
-   <%= render 'event_services' %>
+   <%= render 'salon/services/event_services' %>
 </div>
 <div style="display:none" id="bridal_info" class="info">
-   <%= render 'bridal_services' %>
+   <%= render 'salon/services/bridal_services' %>
 </div>
 
 

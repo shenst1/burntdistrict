@@ -1,20 +1,11 @@
 
-<section class="small-12 columns" id="services_section">
-  <div id="break45px">
-  </div>
-  <div id="servicesbackground">
-    <%= render "header" %>
-    <%= render "address" %>
-  </div>
-
+<%= render "header" %>
+<section class ="services" id="services_section">
+  <%= render "services" %>
 </section>
-
-<section class="small-12 columns" id="district_section">
-  <!-- Need to add a 45 pixel border because things hide under the top menu. Other option is to offset the animate to top by 45px, look into this. -->
-  <div id="break45px">
-  </div>
-  <div id="div1">
-  </div>
+<%= render "address" %>
+<section class="district" id="district_section">
+  <div id="div1"></div>
   <div id="districtbackground">
     <div class="row">
       <div id="districtsection">
@@ -23,34 +14,23 @@
     </div>
   </div>
 </section>
-
-<section class="small-12 columns membership" id="membership_section">
-  <div id="break45px">
-  </div>
-  <div id="div2">
-  </div>
+<section class="membership" id="membership_section">
+  <div id="div2"></div>
   <div id="membershipbackground">
     <div id="membershipsection">
       <%= render "membership" %>
     </div>
   </div>
 </section>
-
-<section class="small-12 columns contact" id="contact_section">
-  <div id="break45px">
-  </div>
-  <div id="div3">
-  </div>
+<section class="contact" id="contact_section">
+  <div id="div3"></div>
   <div id="contactbackground">
     <div id="contactsection">
       <%= render "contact" %>
     </div>
   </div>
 </section>
-
-<footer class="small-12 columns footer" id="footer_section">
-  <div id="break45px">
-  </div>
+<footer class="footer" id="footer_section">
   <div id="footerbackground">
     <%= render "footer" %>
   </div>
