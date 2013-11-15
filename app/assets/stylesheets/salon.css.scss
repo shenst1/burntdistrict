@@ -16,7 +16,7 @@ $mainyellow: rgb(255, 255, 0);
   background: url(clear-bg-10-fs8.png) top left repeat ;
   @include background
 }
-@mixin h2header {
+h2 {
     font-size: 4em;
     color: #2a2a2a;
     text-align: center;
@@ -44,6 +44,8 @@ $mainyellow: rgb(255, 255, 0);
   dd {
     font-size: 2em;
     text-align: center;
+  }
+  a {
     text-decoration: underline;
   }
   dt {
@@ -58,9 +60,6 @@ $mainyellow: rgb(255, 255, 0);
 
 //Custom styling for the district section
 #district_section {
-  h2 {
-    @include h2header
-  }
 
   p {
     font-size: 1.5em;
@@ -99,9 +98,6 @@ $mainyellow: rgb(255, 255, 0);
 
 //Custom styling for the membership section
 #membership_section {
-  h2 {
-    @include h2header
-  }
   #membershipbackground {
   background: url(hairphoto.png) top no-repeat;
   background-size: 100%;
@@ -138,9 +134,6 @@ $mainyellow: rgb(255, 255, 0);
 //Custom styling for the contact section
 
 #contact_section {
-  h2 {
-    @include h2header
-  }
   #contactbackground {
   // background: url(eventsphoto.png) top no-repeat;
   background-color: #bdc3c7;

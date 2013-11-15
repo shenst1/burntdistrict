@@ -3,14 +3,15 @@
 $(document).ready ->
   navSection = (e) ->
     e.preventDefault();
-    section = "#" + @.id + "_section"
+    section = "#" + this.id + "_section"
     $(".main-logo").remove()
     $(".success").hide()
     $("#welcome").fadeIn()
-    $(document.body).animate
+    $("html, body").animate
       scrollTop: $(section).offset().top
     , 500
     $("#small-logo").fadeIn(500)
+    return false
 
 
   $('.top-bar-section a').click navSection
