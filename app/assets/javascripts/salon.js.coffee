@@ -16,10 +16,9 @@ $(document).ready ->
 
 
   revealInfo = (e) ->
-    e.preventDefault();
+    alert "it is working"
     info = "#" + @.id + "_info"
     $("div .info").hide()
     $(info).show()
-    # $("#hair_info").fadeIn()
-  $('.menu dd').click revealInfo
+  $('.menu-services li').click revealInfo
 

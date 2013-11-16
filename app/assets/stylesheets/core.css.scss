@@ -41,7 +41,15 @@
 
 body {
   text-align: center;
+  background: url('retina_wood.png') repeat fixed top center;
+  font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
+
+.row {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
 header, nav, article, aside, .example_ad, footer {
   box-sizing: border-box;
   -moz-box-sizing: border-box;

@@ -1,7 +1,7 @@
 // Place all the styles related to the salon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$mainpurple: #666;
+$mainpurple: #886a68;
 // $backgrounds: services, district, contact, membership;
 $mainyellow: rgb(255, 255, 0);
 
@@ -16,11 +16,13 @@ $mainyellow: rgb(255, 255, 0);
   background: transparent;
   @include background
 }
+article {
+  padding: 50px;
+}
 h2 {
     font-size: 4em;
     color: #2a2a2a;
     text-align: center;
-    font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
     text-shadow: 1px 1px 0 $mainpurple,-1px -1px 0 $mainpurple, 4px 4px 0 rgba(52,54,56,.4);
 }
 .menu-services {
@@ -29,12 +31,10 @@ h2 {
 
 // Custom styling for services section
 #services_section {
+  margin-top: 45px;
   #servicesbackground {
   @include clearbg;
 
-  }
-  .sub-nav {
-    text-decoration: underline;
   }
   img {
     width: 100%;
@@ -43,27 +43,28 @@ h2 {
   h3 {
     color: #2a2a2a;
     text-align: center;
-  }
-  dl {
-    text-align: center;
-    color: $mainyellow;
 
   }
-  dd {
+
+  li {
+    display: inline-block;
     font-size: 2em;
-    text-align: center;
+    text-decoration: underline;
+    margin-right: 1em;
+    margin-left: 1em;
+    color: $mainpurple;
+
+
   }
   a {
     text-decoration: underline;
   }
-  dt {
-    font-size: 2em;
-    text-align: center;
-
-  }
   ul {
     list-style-type: none;
   }
+}
+#address_section {
+  margin-top: 45px;
 }
 
 //Custom styling for the district section
@@ -92,9 +93,7 @@ h2 {
   border-spacing: 0;
   @include background
   }
-  #districtsection {
-    padding: 50px;
-  }
+
   #div1 {
   height: 150px;
   background: url(comb-dividerr.png) center no-repeat;
@@ -109,7 +108,6 @@ h2 {
   #membershipbackground {
   background: url(hairphoto.png) top no-repeat;
   background-size: 100%;
-
   @include background
   }
   p {
@@ -194,13 +192,6 @@ h2 {
   }
 }
 //Styling for transition elements
-
-#break45px {
-  width: 100%;
-  min-width: 910px;
-  height: 45px;
-  position: relative;
-}
 
 #small-logo {
   display: none;
