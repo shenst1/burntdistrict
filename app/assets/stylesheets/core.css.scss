@@ -5,34 +5,24 @@
 /* ------------------------ */
 /* tablet portrait */
 @media  #{$tablet_portrait} {
-  html {
-    background: gray;
-  }
+
 }
 
 /* tablet landscape */
 @media #{$tablet_landscape} {
-  html {
-    background: red;
-  }
+
 }
 
 
 /* mobile portrait */
 @media #{$mobile_portrait} {
-  html {
-    background: yellow;
-  }
+
 }
 
 /* mobile landscape */
 @media #{$mobile_landscape} {
-  html {
-    background: orange;
-  }
+
 }
-
-
 
 
 /* General layout / design stuff */
@@ -41,7 +31,6 @@
 
 body {
   text-align: center;
-  // background-color:
   background: url('tweed.png') repeat fixed top center;
   font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
@@ -49,46 +38,22 @@ body {
 .row {
   max-width: 60em;
   margin: 0 auto;
+  padding: 1em;
 }
 
-header, nav, article, aside, .example_ad, footer {
+header, nav {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-header, nav, article, aside, .example_ad, footer {
 
-}
-
-
-// aside {
-//   width: 30%;
-//   float: right;
-// }
-
-// .example_ad {
-//   width: 30%;
-//   float: right;
-//   padding: 0;
-// }
-
-// .example_ad img {
-//   width: 100%;
-//   display: block;
-// }
-
-// footer {
-//   clear: both;
-// }
-
-
-/* this is where the ordering happens */
+/* this is where the mobile ordering and magic happens */
 /* ------------------------------- */
 @media #{$mobile} {
-  address, .services, .district, .membership, .contact, footer {
+  .address, .services, .district, .membership, .contact, footer {
     @include box_ordinal_group(5);
   }
-  address {
+  .address {
     @include box_ordinal_group(1);
   }
   .services {
@@ -109,16 +74,19 @@ header, nav, article, aside, .example_ad, footer {
   .welcome {
     display: none;
   }
-  .menu-services {
+  #services_section .menu-services {
     display: inline-block;
+   li {
+    font-size: 1.2em;
+    }
   }
-
  .row {
     display:-webkit-box;
     -webkit-box-orient:vertical;
   }
-  .price-list {
+  .price-list, .price-list-right {
     float: none;
     width: auto;
   }
+
 }
