@@ -16,7 +16,7 @@ $(document).ready ->
 
 
   revealInfo = (e) ->
-    alert "it is working"
+    e.preventDefault()
     info = "#" + @.id + "_info"
     $("div .info").hide()
     $(info).show()

@@ -1,10 +1,33 @@
 // Place all the styles related to the salon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$mainpurple: #886a68;
-// $backgrounds: services, district, contact, membership;
-$mainyellow: rgb(255, 255, 0);
-
+$feature-color: #886a68;
+$default-gray: #7f8c8d;
+$base-text-color: #ecf0f1;
+.service-explanation {
+  color: $base-text-color;
+  max-width: 30em;
+  margin: 0 auto;
+}
+.price-list {
+  width: 50%;
+  float: left;
+  background-color: $default-gray;
+  padding: 3px;
+  padding-right: 1em;
+  margin: 3px;
+  border-width: 2px;
+  border-style: ridge;
+  border-color: $feature-color;
+  li {
+    font-size: 1.2em;
+    text-align: right;
+    color: darken($feature-color, 30%);
+  }
+}
+.address {
+  clear: both;
+}
 
 @mixin background {
   position: relative;
@@ -23,7 +46,7 @@ h2 {
     font-size: 4em;
     color: #2a2a2a;
     text-align: center;
-    text-shadow: 1px 1px 0 $mainpurple,-1px -1px 0 $mainpurple, 4px 4px 0 rgba(52,54,56,.4);
+    text-shadow: 1px 1px 0 $feature-color,-1px -1px 0 $feature-color, 4px 4px 0 rgba(52,54,56,.4);
 }
 .menu-services {
   display: none;
@@ -46,13 +69,13 @@ h2 {
 
   }
 
-  li {
+  .menu-services li {
     display: inline-block;
     font-size: 2em;
     text-decoration: underline;
     margin-right: 1em;
     margin-left: 1em;
-    color: $mainpurple;
+    color: $feature-color;
 
 
   }
@@ -65,6 +88,11 @@ h2 {
 }
 #address_section {
   margin-top: 45px;
+  img {
+    border-width: 2px;
+    border-style: ridge;
+    border-color: $feature-color;
+  }
 }
 
 //Custom styling for the district section

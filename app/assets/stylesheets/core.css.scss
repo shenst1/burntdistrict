@@ -41,7 +41,8 @@
 
 body {
   text-align: center;
-  background: url('retina_wood.png') repeat fixed top center;
+  // background-color:
+  background: url('tweed.png') repeat fixed top center;
   font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
@@ -116,7 +117,7 @@ header, nav, article, aside, .example_ad, footer {
     display:-webkit-box;
     -webkit-box-orient:vertical;
   }
-  article, aside, .example_ad {
+  .price-list, aside, .example_ad {
     float: none;
     width: auto;
   }
