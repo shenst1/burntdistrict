@@ -5,9 +5,9 @@ $feature-color: #886a68;
 $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
 
+$base-font-size-p: 1.1em;
 
-@mixin price-list {
-  width: 45%;
+@mixin section {
   background-color: $default-gray;
   padding: 3px;
   padding-right: 1em;
@@ -15,11 +15,15 @@ $base-text-color: #ecf0f1;
   border-width: 2px;
   border-style: ridge;
   border-color: $feature-color;
+}
+@mixin price-list {
+  width: 45%;
   li {
     font-size: 1.2em;
     text-align: right;
     color: darken($feature-color, 30%);
   }
+  @include section
 }
 .price-list-left {
   float: left;
@@ -114,7 +118,7 @@ h2 {
 #district_section {
 
   p {
-    font-size: 1.5em;
+    font-size: $base-font-size-p;
 
     &.secondary {
       font-size: 2em;
@@ -128,13 +132,14 @@ h2 {
       @include clearbg
     }
   }
-  #districtbackground {
+  .background {
+  @include section
+  // background: url(spaphoto.png) top no-repeat, url(low_contrast_linen.pn) repeat-x;
+  // // background-size: 100%;
+  // // padding: 0;
+  // // border-spacing: 0;
+  // // @include background
 
-  background: url(spaphoto.png) top no-repeat, url(low_contrast_linen.pn) repeat-x;
-  background-size: 100%;
-  padding: 0;
-  border-spacing: 0;
-  @include background
   }
 
   #div1 {

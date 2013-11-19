@@ -40,6 +40,9 @@ body {
   margin: 0 auto;
   padding: 1em;
 }
+p {
+  font-size: 1em;
+}
 
 header, nav {
   box-sizing: border-box;
@@ -84,7 +87,7 @@ header, nav {
     display:-webkit-box;
     -webkit-box-orient:vertical;
   }
-  .price-list, .price-list-right {
+  .price-list-left, .price-list-right, .price-list-center {
     float: none;
     width: auto;
   }
