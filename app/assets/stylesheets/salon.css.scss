@@ -4,7 +4,6 @@
 $feature-color: #886a68;
 $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
-
 $base-font-size-p: 1.1em;
 
 @mixin section {
@@ -61,6 +60,9 @@ h2 {
     text-align: center;
     text-shadow: 1px 1px 0 $feature-color,-1px -1px 0 $feature-color, 4px 4px 0 rgba(52,54,56,.4);
 }
+.background {
+  @include section
+}
 .menu-services {
   display: none;
 }
@@ -74,10 +76,6 @@ h2 {
     margin: 0 auto;
   }
 
-  #servicesbackground {
-  @include clearbg;
-
-  }
   img {
     width: 100%;
     height: 0 auto;
@@ -107,6 +105,9 @@ h2 {
 }
 #address_section {
   margin-top: 45px;
+  .button {
+    margin-top: 1em;
+  }
   img {
     border-width: 2px;
     border-style: ridge;
@@ -139,9 +140,7 @@ h2 {
   // // padding: 0;
   // // border-spacing: 0;
   // // @include background
-
   }
-
   #div1 {
   height: 150px;
   background: url(comb-dividerr.png) center no-repeat;
@@ -153,11 +152,6 @@ h2 {
 
 //Custom styling for the membership section
 #membership_section {
-  #membershipbackground {
-  background: url(hairphoto.png) top no-repeat;
-  background-size: 100%;
-  @include background
-  }
   p {
     font-size: 1.75em;
     &.secondary {
