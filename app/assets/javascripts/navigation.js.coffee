@@ -4,8 +4,7 @@ $(document).ready ->
   navSection = (e) ->
     e.preventDefault();
     section = "#" + this.id + "_scroll"
-    $(".main-logo").remove()
-    $(".success").hide()
+    $(".welcome").hide()
     $("#welcome").fadeIn()
     if section == "#services_scroll"
       $("html, body").animate
