@@ -183,7 +183,57 @@ h2 {
 
 #contact_section {
   #contactbackground {
-  // background: url(eventsphoto.png) top no-repeat;
+  background-color: #bdc3c7;
+  background-size: 100%;
+  @include background
+  }
+  #contactsection {
+    padding: 50px;
+  }
+  #div3 {
+  background: url(razor-divider.png) center no-repeat;
+  height: 150px;
+  @include background
+  }
+  p {
+    font-size: 1.75em;
+
+    &.secondary {
+      font-size: 2em;
+      border: 1px dotted rgba(52,54,56,.4);
+      border-width: 1px 0;
+      padding: 8px 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &.clearbg {
+      text-align: center;
+      @include clearbg
+    }
+    &.name {
+      display: inline;
+    }
+    &.title {
+      display: inline;
+      // background-color: #f1c40f;
+      color: #2c3e50;
+    }
+    &.bio {
+      font-size: 1em;
+      display: inline;
+      float: right;
+    }
+  }
+  ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+  li.profile {
+
+  }
+}
+#staff_section {
+  #contactbackground {
   background-color: #bdc3c7;
   background-size: 100%;
   @include background
