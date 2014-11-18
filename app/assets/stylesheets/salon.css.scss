@@ -6,6 +6,11 @@ $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
 $base-font-size-p: 1.1em;
 
+$primary: green;
+.list-group-item .circle {
+  -webkit-filter: grayscale(0.7);
+}
+
 @mixin section {
   background-color: $default-gray;
   padding: 3px;
@@ -147,8 +152,6 @@ h2 {
   @include background
   }
 }
-
-
 
 //Custom styling for the membership section
 #membership_section {
@@ -292,7 +295,6 @@ h2 {
 
 #footer_section {
   #footerbackground {
-  background: url(clear-bg-10-fs8.png);
   @include background
   }
   #div4 {

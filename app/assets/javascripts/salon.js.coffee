@@ -12,12 +12,3 @@ $(document).ready ->
     $("#small-logo").fadeIn(500)
   $('div.main-logo').click revealServices
   $('div.success').click revealServices
-
-
-  revealInfo = (e) ->
-    e.preventDefault()
-    info = "#" + @.id + "_info"
-    $("div .info").hide()
-    $(info).show()
-  $('.menu-services li').click revealInfo
-
