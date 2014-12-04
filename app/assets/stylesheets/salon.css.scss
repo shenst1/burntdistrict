@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $feature-color: #886a68;
+$primary-brand: #301030;
 $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
 $base-font-size-p: 1.1em;
 
-$primary: green;
 .list-group-item .circle {
   -webkit-filter: grayscale(0.7);
 }
@@ -68,19 +68,29 @@ h2 {
 .background {
   @include section
 }
-.menu-services {
-  display: none;
+
+.navbar {
+  margin-bottom: 0px;
+}
+.nav-tabs, .navbar-default {
+  background-color: $primary-brand !important
+}
+
+.group-photo {
+  background: url(WEB_GroupNew.jpg) no-repeat;
+  background-size: cover;
+  height: 422px;
+  min-width: 768px
 }
 
 // Custom styling for services section
 #services_section {
-  margin-top: 45px;
+  // margin-top: 45px;
   .service-explanation {
     color: $base-text-color;
     max-width: 30em;
     margin: 0 auto;
   }
-
   img {
     width: 100%;
     height: 0 auto;

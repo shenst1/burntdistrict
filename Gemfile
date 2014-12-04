@@ -19,7 +19,6 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'zurb-foundation', '~> 4.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-material-design', '~> 0.1.1'
 

@@ -1,15 +1,24 @@
 @import "mixins";
-$primary: #8e44ad;
+
 
 /* breakpoint rules */
 /* ------------------------ */
 /* tablet portrait */
 @media  #{$tablet_portrait} {
-
+.group-photo {
+    background-size: cover;
+    background: url(aggressive_hairdrying.png) no-repeat;
+    height: 450px;
+  }
 }
 
 /* tablet landscape */
 @media #{$tablet_landscape} {
+  .group-photo {
+    background-size: cover;
+    background: url(aggressive_hairdrying.png) no-repeat;
+    height: 450px;
+  }
 
 }
 
@@ -38,8 +47,8 @@ body {
 .row {
   max-width: 80em;
   margin: 0 auto;
-  padding: 1em;
 }
+
 p {
   font-size: 1em;
 }
@@ -49,6 +58,7 @@ header, nav {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 
 /* this is where the mobile ordering and magic happens */
 /* ------------------------------- */
@@ -82,6 +92,10 @@ header, nav {
    li {
     font-size: 1.2em;
     }
+  }
+  .group-photo {
+    background-size: cover;
+    background: url(WEB_MadisonHeadNew.png) no-repeat;
   }
  .row {
     display:-webkit-box;
