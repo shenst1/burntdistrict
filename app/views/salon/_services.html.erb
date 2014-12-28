@@ -1,6 +1,8 @@
 <ul class="nav nav-tabs">
     <li class="active"><a href="#hair" data-toggle="tab">Hair</a></li>
     <li><a href="#spa" data-toggle="tab">Spa</a></li>
+    <li><a href="#staff" data-toggle="tab">Staff</a></li>
+    <li><a href="#membership" data-toggle="tab">Membership</a></li>
 </ul>
 <div id="myTabContent" class="tab-content">
   <div id="hair" class="info tab-pane fade in active">
@@ -8,6 +10,12 @@
    </div>
   <div id="spa" class="info tab-pane fade">
      <%= render 'salon/services/spa_services' %>
+  </div>
+  <div id="staff" class="info tab-pane fade">
+    <%= render 'salon/staff' %>
+  </div>
+  <div id="membership" class="info tab-pane fade">
+    <%= render 'salon/membership' %>
   </div>
 </div>
 

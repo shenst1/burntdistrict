@@ -1,72 +1,21 @@
 // Place all the styles related to the salon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$feature-color: #886a68;
 $primary-brand: #301030;
+$primary-brand: #301030;
+
 $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
 $base-font-size-p: 1.1em;
+
+$transparent-white: rgba(255, 255, 255, 0.8);
 
 .list-group-item .circle {
   -webkit-filter: grayscale(0.7);
 }
 
-@mixin section {
-  background-color: $default-gray;
-  padding: 3px;
-  padding-right: 1em;
-  margin: 3px;
-  border-width: 2px;
-  border-style: ridge;
-  border-color: $feature-color;
-}
-@mixin price-list {
-  width: 45%;
-  li {
-    font-size: 1.2em;
-    text-align: right;
-    color: darken($feature-color, 30%);
-  }
-  @include section
-}
-.price-list-left {
-  float: left;
-  @include price-list
-}
-.price-list-right {
-  float: right;
-  @include price-list
-}
-.price-list-center {
-
-  @include price-list
-}
-
-.address {
-  clear: both;
-}
-
-@mixin background {
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-}
-@mixin clearbg {
-  background: transparent;
-  @include background
-}
-article {
-  padding: 50px;
-}
-h2 {
-    font-size: 4em;
-    color: #ecf0f1;
-    text-align: center;
-    text-shadow: 1px 1px 0 $feature-color,-1px -1px 0 $feature-color, 4px 4px 0 rgba(52,54,56,.4);
-}
-.background {
-  @include section
+.list-group {
+  text-align: left;
 }
 
 .navbar {
@@ -82,240 +31,16 @@ h2 {
   height: 422px;
   min-width: 768px
 }
-
-// Custom styling for services section
-#services_section {
-  // margin-top: 45px;
-  .service-explanation {
-    color: $base-text-color;
-    max-width: 30em;
-    margin: 0 auto;
-  }
-  img {
-    width: 100%;
-    height: 0 auto;
-  }
-  h3 {
-    color: black;
-    text-align: center;
-    font-size: 1.4em;
-    margin-top: 1em;
-
-  }
-
-  .menu-services li {
-    display: inline-block;
-    font-size: 2em;
-    text-decoration: underline;
-    margin-right: 1em;
-    margin-left: 1em;
-    color: $base-text-color;
-  }
-  a {
-    text-decoration: underline;
-  }
-  ul {
-    list-style-type: none;
-  }
+.popover {
+  background-color: $primary-brand !important;
 }
-#address_section {
-  margin-top: 45px;
-  .button {
-    margin-top: 1em;
-  }
-  img {
-    border-width: 2px;
-    border-style: ridge;
-    border-color: $feature-color;
-  }
+.popover-title {
+  color: black;
+  text-align: center;
+}
+.popover-content {
+  background-color: $primary-brand;
 }
 
-//Custom styling for the district section
-#district_section {
-
-  p {
-    font-size: $base-font-size-p;
-
-    &.secondary {
-      font-size: 2em;
-      border: 1px dotted rgba(52,54,56,.4);
-      border-width: 1px 0;
-      padding: 8px 10px;
-      margin-bottom: 20px;
-    }
-    &.clearbg {
-      text-align: center;
-      @include clearbg
-    }
-  }
-  .background {
-  @include section
-  // background: url(spaphoto.png) top no-repeat, url(low_contrast_linen.pn) repeat-x;
-  // // background-size: 100%;
-  // // padding: 0;
-  // // border-spacing: 0;
-  // // @include background
-  }
-  #div1 {
-  height: 150px;
-  background: url(comb-dividerr.png) center no-repeat;
-  @include background
-  }
-}
-
-//Custom styling for the membership section
-#membership_section {
-  p {
-    font-size: 1.75em;
-    &.secondary {
-      font-size: 2em;
-      border: 1px dotted rgba(52,54,56,.4);
-      border-width: 1px 0;
-      padding: 8px 10px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    &.clearbg {
-      text-align: center;
-      @include clearbg
-    }
-  }
-  #div2 {
-  background: url(scissordivider.png) center no-repeat;
-
-  height: 150px;
-  @include background
-  }
-  #membershipsection {
-    padding: 50px;
-  }
-}
-
-
-//Custom styling for the contact section
-
-#contact_section {
-  #contactbackground {
-  background-color: #bdc3c7;
-  background-size: 100%;
-  @include background
-  }
-  #contactsection {
-    padding: 50px;
-  }
-  #div3 {
-  background: url(razor-divider.png) center no-repeat;
-  height: 150px;
-  @include background
-  }
-  p {
-    font-size: 1.75em;
-
-    &.secondary {
-      font-size: 2em;
-      border: 1px dotted rgba(52,54,56,.4);
-      border-width: 1px 0;
-      padding: 8px 10px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    &.clearbg {
-      text-align: center;
-      @include clearbg
-    }
-    &.name {
-      display: inline;
-    }
-    &.title {
-      display: inline;
-      // background-color: #f1c40f;
-      color: #2c3e50;
-    }
-    &.bio {
-      font-size: 1em;
-      display: inline;
-      float: right;
-    }
-  }
-  ul {
-    list-style-type: none;
-    display: inline-block;
-  }
-  li.profile {
-
-  }
-}
-#staff_section {
-  #contactbackground {
-  background-color: #bdc3c7;
-  background-size: 100%;
-  @include background
-  }
-  #contactsection {
-    padding: 50px;
-  }
-  #div3 {
-  background: url(razor-divider.png) center no-repeat;
-  height: 150px;
-  @include background
-  }
-  p {
-    font-size: 1.75em;
-
-    &.secondary {
-      font-size: 2em;
-      border: 1px dotted rgba(52,54,56,.4);
-      border-width: 1px 0;
-      padding: 8px 10px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    &.clearbg {
-      text-align: center;
-      @include clearbg
-    }
-    &.name {
-      display: inline;
-    }
-    &.title {
-      display: inline;
-      // background-color: #f1c40f;
-      color: #2c3e50;
-    }
-    &.bio {
-      font-size: 1em;
-      display: inline;
-      float: right;
-    }
-  }
-  ul {
-    list-style-type: none;
-    display: inline-block;
-  }
-  li.profile {
-
-  }
-}
-//Styling for transition elements
-
-#small-logo {
-  display: none;
-}
-//Custom styling for the footer
-
-#footer_section {
-  #footerbackground {
-  @include background
-  }
-  #div4 {
-  background: url(scissordivider.png) no-repeat;
-  height: 150px;
-  @include background
-  }
-  p {
-    font-size: .75em;
-    text-align: center;
-  }
-}
 
 
