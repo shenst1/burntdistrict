@@ -25,6 +25,14 @@ $transparent-white: rgba(255, 255, 255, 0.8);
   background-color: $primary-brand !important
 }
 
+.brand-logo {
+  float: left;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1px;
+  margin: 1px 0px 0px 3px;
+}
+
 .group-photo {
   background: url(WEB_GroupNew.jpg) no-repeat;
   background-size: cover;
