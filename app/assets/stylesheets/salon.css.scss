@@ -12,6 +12,8 @@ $transparent-white: rgba(255, 255, 255, 0.8);
 
 .list-group-item .circle {
   -webkit-filter: grayscale(0.7);
+  -moz-filter: grayscale(0.7);
+  filter: grayscale;
 }
 
 .list-group {
@@ -50,5 +52,12 @@ $transparent-white: rgba(255, 255, 255, 0.8);
   background-color: $primary-brand;
 }
 
+#address {
+  float: right;
+}
+
+.modal-content {
+  margin-top: 0px !important;
+}
 
 
