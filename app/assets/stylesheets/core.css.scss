@@ -7,8 +7,9 @@
 @media  #{$tablet_portrait} {
 .group-photo {
     background-size: cover;
-    background: url(aggressive_hairdrying.png) no-repeat;
+    background: url(WEB_MadisonHeadNew.png) no-repeat;
     height: 450px;
+    width: 100%;
   }
 }
 
@@ -21,16 +22,41 @@
   }
 
 }
-
+@media #{$mobile} {
+  .group-photo {
+    background-size: cover;
+    background: url(WEB_MadisonHeadNew.png) no-repeat;
+    width: 100%;
+  }
+  .navbar-header {
+    .title {
+      display: none;
+    }
+  }
+}
 
 /* mobile portrait */
 @media #{$mobile_portrait} {
-
+  .group-photo {
+    background-size: cover;
+    background: url(WEB_MadisonHeadNew.png) no-repeat;
+    width: 100%;
+  }
+  .navbar-header {
+    .title {
+      display: none;
+    }
+  }
 }
 
 /* mobile landscape */
 @media #{$mobile_landscape} {
-
+  .group-photo {
+    background-size: cover;
+    background: url(aggressive_hairdrying.png) no-repeat;
+    height: 450px;
+    width: 100%;
+  }
 }
 
 
@@ -39,9 +65,8 @@
 
 
 body {
-  text-align: center;
+  text-align: left;
   background: url('tweed.png') repeat fixed top center;
-  font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 .row {
@@ -51,62 +76,4 @@ body {
 
 p {
   font-size: 1em;
-}
-
-header, nav {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-
-/* this is where the mobile ordering and magic happens */
-/* ------------------------------- */
-@media #{$mobile} {
-  .address, .services, .district, .membership, .contact, footer {
-    @include box_ordinal_group(5);
-  }
-  .address {
-    @include box_ordinal_group(1);
-  }
-  .services {
-    @include box_ordinal_group(2);
-  }
-  // article {
-  //   @include box_ordinal_group(2);
-  // }
-  // aside {
-  //   @include box_ordinal_group(3);
-  // }
-  // .example_ad {
-  //   @include box_ordinal_group(4);
-  // }
-  // footer {
-  //   @include box_ordinal_group(6);
-  // }
-  .welcome {
-    display: none;
-  }
-  #services_section .menu-services {
-    display: inline-block;
-   li {
-    font-size: 1.2em;
-    }
-  }
-  .group-photo {
-    background-size: cover;
-    background: url(WEB_MadisonHeadNew.png) no-repeat;
-  }
- .row {
-    display:-webkit-box;
-    -webkit-box-orient:vertical;
-  }
-  .price-list-left, .price-list-right, .price-list-center {
-    float: none;
-    width: auto;
-  }
-  #address {
-    display: none;
-  }
-
 }

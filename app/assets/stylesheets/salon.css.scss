@@ -2,13 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $primary-brand: #301030;
-$primary-brand: #301030;
 
 $default-gray: #7f8c8d;
 $base-text-color: #ecf0f1;
 $base-font-size-p: 1.1em;
 
 $transparent-white: rgba(255, 255, 255, 0.8);
+
+$default-margin: 15px;
 
 .list-group-item .circle {
   -webkit-filter: grayscale(0.7);
@@ -60,4 +61,7 @@ $transparent-white: rgba(255, 255, 255, 0.8);
   margin-top: 0px !important;
 }
 
-
+.map-photo {
+  width: 100%;
+  margin-bottom: $default-margin;
+}
