@@ -57,6 +57,9 @@
       display: block;
     }
   }
+  #staff .list-group .list-group-item .row-content .least-content {
+    position: initial !important;
+  }
 }
 
 /* mobile portrait */
@@ -79,6 +82,9 @@
     #textContact {
       display: block;
     }
+  }
+  #staff .list-group .list-group-item .row-content .least-content {
+    position: initial !important;
   }
 }
 

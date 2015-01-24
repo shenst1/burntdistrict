@@ -17,9 +17,9 @@ $(function () {
     if( (navigator.platform.indexOf("iPhone") != -1)
         || (navigator.platform.indexOf("iPod") != -1)
         || (navigator.platform.indexOf("iPad") != -1))
-         window.open("maps://maps.google.com/maps/place/Burnt+District+Salon+%26+Spa/@47.603283,-122.33513,17z/data=!3m1!4b1!4m2!3m1!1s0x54906ab015d3a017:0xcea7e7e86d66178");
+         window.open("maps://maps.google.com/?saddr=96+Columbia+St&daddr=Burnt+District+Salon+&+Spa");
     else
-         window.open("https://www.google.com/maps/place/Burnt+District+Salon+%26+Spa/@47.603283,-122.33513,17z/data=!3m1!4b1!4m2!3m1!1s0x54906ab015d3a017:0xcea7e7e86d66178");
+         window.open("https://maps.google.com/?saddr=96+Columbia+St&daddr=Burnt+District+Salon+&+Spa");
   }
   $( "#Map" ).on( "click", function() {
     navigation();
