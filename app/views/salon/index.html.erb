@@ -1,6 +1,9 @@
 <header class="header">
   <%= render "header" %>
+  <%= render "contact" %>
 </header>
+<div class="col-xs-12 group-photo">
+</div>
 
 <section class ="services" id="services_section">
   <div id="services_scroll">
@@ -8,47 +11,7 @@
   </div>
 </section>
 
-<section class="address" id="address_section">
-  <%= render "address" %>
-</section>
-
-<section class="district" id="district_section">
-  <div id="div1"></div>
-  <div class="background" id="district_scroll" >
-    <article>
-      <%= render "district" %>
-    </article>
-  </div>
-</section>
-
-<section class="membership" id="membership_section">
-  <div id="div2"></div>
-  <div class="background" id="membership_scroll">
-    <article>
-      <%= render "membership" %>
-    </article>
-  </div>
-</section>
-
-<section class="contact" id="contact_section">
-  <div id="div3"></div>
-  <div class="background" id="contact_scroll">
-    <article>
-      <%= render "contact" %>
-    </article>
-  </div>
-</section>
-
-<section class="staff" id="staff_section">
-  <div id="div3"></div>
-  <div class="background" id="staff_scroll">
-    <article>
-      <%= render "staff" %>
-    </article>
-  </div>
-</section>
-
-<footer class="footer" id="footer_section">
+<footer class="footer jumbotron" id="footer_section">
   <div id="footerbackground">
     <%= render "footer" %>
   </div>

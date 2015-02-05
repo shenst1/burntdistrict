@@ -1,28 +1,30 @@
-<div id="welcome" class="menu-services">
-    <a href="#hair"><li id="hair">Hair</li></a>
-    <a href="#spa"><li id="spa">Spa</li></a>
-    <a href="events"><li id="events">Events</li></a>
-    <a href="bridal"><li id="bridal">Bridal</li></a>
-
-  <div id="welcome_message" class="info">
-    <h3>Seattle's First Member's Only Salon &amp; Spa</h3>
-
-    <h3 class="subheader">Burnt District is not just a Salon and Spa... We are a photography studio, art gallery and events venue.  Above all, we are a gathering space for our members.  This members only, private establishment has merged a high-end salon with a "speakeasy feel".  Come on down and sign up, membership is complimentary!</h3>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#hair" data-toggle="tab">Hair</a></li>
+    <li><a href="#spa" data-toggle="tab">Waxing</a></li>
+    <li><a href="#lashes" data-toggle="tab">Eyelash Extensions</a></li>
+    <li><a href="#staff" data-toggle="tab">Artists</a></li>
+    <li><a href="#membership" data-toggle="tab">Membership</a></li>
+    <li id="address" data-toggle="modal" data-target="#complete-dialog" title="Location & Hours"><a href="javascript:void(0)">96 Columbia St.</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div id="hair" class="info tab-pane fade in active">
+    <%= render 'salon/services/hairservices' %>
+   </div>
+  <div id="spa" class="info tab-pane fade">
+     <%= render 'salon/services/spa_services' %>
+  </div>
+  <div id="lashes" class="info tab-pane fade">
+     <%= render 'salon/services/lashes' %>
+  </div>
+  <div id="staff" class="info tab-pane fade">
+    <%= render 'salon/staff' %>
+  </div>
+  <div id="membership" class="info tab-pane fade">
+    <%= render 'salon/membership' %>
   </div>
 </div>
 
-<div style="display:none" id="hair_info" class="info">
-  <%= render 'salon/services/hairservices' %>
- </div>
-<div style="display:none" id="spa_info" class="info">
-   <%= render 'salon/services/spa_services' %>
-</div>
-<div style="display:none" id="events_info" class="info">
-   <%= render 'salon/services/event_services' %>
-</div>
-<div style="display:none" id="bridal_info" class="info">
-   <%= render 'salon/services/bridal_services' %>
-</div>
+
 
 
 

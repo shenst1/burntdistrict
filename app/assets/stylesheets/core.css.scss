@@ -5,23 +5,105 @@
 /* ------------------------ */
 /* tablet portrait */
 @media  #{$tablet_portrait} {
-
+  .group-photo {
+    background: url(WEB_GroupNew_Wide.jpg) no-repeat;
+    background-size: cover;
+    height: 270px;
+    width: 100%;
+  }
+  .navbar-header {
+    #phoneContact {
+      display: none;
+    }
+    #textContact {
+      display: block;
+    }
+  }
 }
 
 /* tablet landscape */
 @media #{$tablet_landscape} {
-
+  .group-photo {
+    background: url(aggressive_hairdrying.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+  .navbar-header {
+    #phoneContact {
+      display: none;
+    }
+    #textContact {
+      display: block;
+    }
+  }
 }
-
+@media #{$mobile} {
+  .group-photo {
+    background: url(WEB_GroupNew_Wide.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+  }
+  .navbar-header {
+    .title {
+      display: none;
+    }
+  }
+  .navbar-header {
+    #phoneContact {
+      display: none;
+    }
+    #textContact {
+      display: block;
+    }
+  }
+  #staff .list-group .list-group-item .row-content .least-content {
+    position: initial !important;
+  }
+}
 
 /* mobile portrait */
 @media #{$mobile_portrait} {
-
+  .group-photo {
+    background: url(WEB_GroupNew_Wide.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+  }
+  .navbar-header {
+    .title {
+      display: none;
+    }
+  }
+  .navbar-header {
+    #phoneContact {
+      display: none;
+    }
+    #textContact {
+      display: block;
+    }
+  }
+  #staff .list-group .list-group-item .row-content .least-content {
+    position: initial !important;
+  }
 }
 
 /* mobile landscape */
 @media #{$mobile_landscape} {
-
+  .group-photo {
+    background: url(aggressive_hairdrying.jpg) no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+  }
+  .navbar-header {
+    #phoneContact {
+      display: none;
+    }
+    #textContact {
+      display: block;
+    }
+  }
 }
 
 
@@ -30,66 +112,15 @@
 
 
 body {
-  text-align: center;
+  text-align: left;
   background: url('tweed.png') repeat fixed top center;
-  font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 .row {
-  max-width: 60em;
+  max-width: 80em;
   margin: 0 auto;
-  padding: 1em;
 }
+
 p {
   font-size: 1em;
-}
-
-header, nav {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-/* this is where the mobile ordering and magic happens */
-/* ------------------------------- */
-@media #{$mobile} {
-  .address, .services, .district, .membership, .contact, footer {
-    @include box_ordinal_group(5);
-  }
-  .address {
-    @include box_ordinal_group(1);
-  }
-  .services {
-    @include box_ordinal_group(2);
-  }
-  // article {
-  //   @include box_ordinal_group(2);
-  // }
-  // aside {
-  //   @include box_ordinal_group(3);
-  // }
-  // .example_ad {
-  //   @include box_ordinal_group(4);
-  // }
-  // footer {
-  //   @include box_ordinal_group(6);
-  // }
-  .welcome {
-    display: none;
-  }
-  #services_section .menu-services {
-    display: inline-block;
-   li {
-    font-size: 1.2em;
-    }
-  }
- .row {
-    display:-webkit-box;
-    -webkit-box-orient:vertical;
-  }
-  .price-list-left, .price-list-right, .price-list-center {
-    float: none;
-    width: auto;
-  }
-
 }

@@ -1,22 +1,26 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
-// about supported directives.
-//
 //= require jquery
 //= require jquery_ujs
 //= require jquery.pageslide
 //= require jbar
 //= require jbar.min
-//= require foundation
+//= require bootstrap-sprockets
+//= require bootstrap-material-design
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+  function navigation() {
+    // If it's an iPhone..
+    if( (navigator.platform.indexOf("iPhone") != -1)
+        || (navigator.platform.indexOf("iPod") != -1)
+        || (navigator.platform.indexOf("iPad") != -1))
+         window.open("maps://maps.google.com/?saddr=96+Columbia+St&daddr=Burnt+District+Salon+&+Spa");
+    else
+         window.open("https://maps.google.com/?saddr=96+Columbia+St&daddr=Burnt+District+Salon+&+Spa");
+  }
+  $( "#Map" ).on( "click", function() {
+    navigation();
+  });
+})

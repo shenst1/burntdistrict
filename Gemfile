@@ -19,8 +19,8 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'zurb-foundation', '~> 4.0'
-
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-material-design', '~> 0.1.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
