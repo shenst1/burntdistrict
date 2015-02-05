@@ -13,7 +13,6 @@ $(function () {
   $('[data-toggle="popover"]').popover();
   function navigation() {
     // If it's an iPhone..
-    console.log("Something")
     if( (navigator.platform.indexOf("iPhone") != -1)
         || (navigator.platform.indexOf("iPod") != -1)
         || (navigator.platform.indexOf("iPad") != -1))
