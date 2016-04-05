@@ -42,11 +42,10 @@ $default-margin: 15px;
 }
 
 .group-photo {
-  background: url(WEB_GroupNew.jpg) no-repeat;
+  background: url(homepage-background.jpg) no-repeat;
   background-size: 100%;
-  height: 422px;
-  background-position-y: -122px;
-  overflow: hidden;
+  height: calc(60vh + 10vh);
+  background-position: 50% 50%;
 }
 .popover {
   background-color: $primary-brand !important;
