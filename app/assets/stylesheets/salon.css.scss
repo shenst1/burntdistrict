@@ -46,6 +46,16 @@ $default-margin: 15px;
   background-size: 100%;
   height: calc(60vh + 10vh);
   background-position: 50% 50%;
+  position: relative;
+  .group-photo-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+    padding: 20px 40px;
+  }
 }
 .popover {
   background-color: $primary-brand !important;
